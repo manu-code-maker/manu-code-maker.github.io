@@ -37,4 +37,5 @@ The interactive web portfolio is live and deployed at:
 - **Email:** [manumorales16@gmail.com](mailto:manumorales16@gmail.com)
 - **LinkedIn:** [linkedin.com/in/qa-manuelm](https://www.linkedin.com/in/qa-manuelm)
 - **GitHub:** [github.com/manu-code-maker](https://github.com/manu-code-maker)
-- **Certifications:** ISTQB Certified Tester Foundation Level (CTFL) · Cambridge English B2/C1
+- **Certifications & Languages:** Cambridge English B2 (First Certificate in English / FCE) · Spanish (Native)
+
