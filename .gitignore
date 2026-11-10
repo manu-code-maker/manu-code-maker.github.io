@@ -1,0 +1,27 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Environment and secrets (safe-git-publishing)
+.env*
+*token*
+*secret*
+
+# Binarios y ejecutables compilados (prohibidos por política de seguridad)
+*.exe
+*.bat
+*.cmd
+*.dll
+*.elf
+*.bin
+*.pkg
+*.zip
+*.tar.gz
+*.7z
+dist/
+build/
+out/

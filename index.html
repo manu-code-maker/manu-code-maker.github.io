@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manuel Morales | QA Lead & Test Automation Architect | Pioneering Agentic AI Testing</title>
+  <meta name="description" content="Portfolio profesional de Manuel Morales. QA Lead, arquitecto de automatización de pruebas (Playwright, Java, JMeter) y pionero en testing con Inteligencia Artificial Agéntica.">
+  <link rel="canonical" href="https://manu-code-maker.github.io/">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://manu-code-maker.github.io/">
+  <meta property="og:title" content="Manuel Morales | QA Lead & Test Automation Architect">
+  <meta property="og:description" content="Ingeniería de Calidad de Software, Automatización Robusta y Testing Agéntico con IA (Playwright, Protocolo MCP, Zod, Self-Healing).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230ea5e9'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='50' font-weight='bold' fill='white'>MM</text></svg>">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            },
+            dark: {
+              900: '#090d16',
+              850: '#0d1322',
+              800: '#131b2e',
+              700: '#1e293b',
+              600: '#334155'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom glow effects & grid lines */
+    .bg-grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.35);
+    }
+    .badge-gradient {
+      background: linear-gradient(135deg, rgba(14, 165, 233, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+    /* Smooth custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090d16;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+
+<body class="bg-dark-900 text-slate-200 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-dark-900/80 backdrop-blur-md border-b border-slate-800/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-500 to-indigo-600 flex items-center justify-center text-white font-mono font-bold text-base shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          MM
+        </div>
+        <div>
+          <span class="font-bold text-white tracking-tight text-base sm:text-lg">Manuel Morales</span>
+          <span class="text-xs text-brand-400 font-mono ml-1.5 hidden sm:inline-block">/ QA Lead & AI Architect</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#proyectos" class="hover:text-brand-400 transition-colors">Proyectos Insignia</a>
+        <a href="#pilares" class="hover:text-brand-400 transition-colors">Especialidades</a>
+        <a href="#live-demo" class="hover:text-brand-400 transition-colors">Terminal & Métricas</a>
+        <a href="#experiencia" class="hover:text-brand-400 transition-colors">Trayectoria</a>
+        <a href="#contacto" class="hover:text-brand-400 transition-colors">Contacto</a>
+      </div>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/manu-code-maker" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-dark-800 border border-slate-800 transition-all" title="Perfil de GitHub (manu-code-maker)">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="#contacto" class="px-4 py-2 rounded-lg text-xs font-semibold bg-brand-500/10 text-brand-400 border border-brand-500/30 hover:bg-brand-500 hover:text-white transition-all shadow-sm">
+          Descargar CV / Contacto
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-grid-pattern">
+    <!-- Radial ambient glow -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-brand-500/15 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-[400px] h-[300px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-gradient text-xs font-medium text-brand-300 mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Open to Senior / Lead / Staff QA Opportunities (Madrid &amp; 100% Remoto)</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl">
+        Ingeniería de Calidad de Software, <span class="bg-gradient-to-r from-brand-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">Automatización Robusta</span> y Desarrollo Agéntico con IA.
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl font-normal leading-relaxed">
+        QA Lead con más de 6 años de experiencia diseñando arquitecturas de pruebas end-to-end, validación de sistemas transaccionales críticos y liderando la integración práctica de Inteligencia Artificial (Claude Code, MCP) en los ciclos de calidad.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <a href="#proyectos" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:-translate-y-0.5 transition-all flex items-center gap-2">
+          <span>Explorar Proyectos Insignia</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <a href="#live-demo" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-dark-800 hover:bg-dark-700 text-slate-200 border border-slate-700 hover:border-slate-600 transition-all flex items-center gap-2">
+          <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+          <span>Simulador de Pipeline CI/CD</span>
+        </a>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-slate-800/80">
+        <div class="p-4 rounded-xl bg-dark-850/60 border border-slate-800">
+          <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">+6 años</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">Liderazgo &amp; Automatización QA</div>
+        </div>
+        <div class="p-4 rounded-xl bg-dark-850/60 border border-slate-800">
+          <div class="text-2xl sm:text-3xl font-extrabold text-brand-400 font-mono">-40%</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">Tiempo de Ciclo en Regresiones</div>
+        </div>
+        <div class="p-4 rounded-xl bg-dark-850/60 border border-slate-800">
+          <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400 font-mono">100% CI/CD</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">Quality Gates Desatendidos</div>
+        </div>
+        <div class="p-4 rounded-xl bg-dark-850/60 border border-slate-800">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">AI-Native</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">Flujos Agénticos &amp; Protocolo MCP</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 4 PILARES TÉCNICOS ==================== -->
+  <section id="pilares" class="py-20 bg-dark-850 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-brand-400">Especialidades &amp; Dominio</h2>
+        <p class="mt-2 text-3xl font-bold text-white tracking-tight">Pilares de Ingeniería de Calidad</p>
+        <p class="mt-3 text-slate-400 text-sm">
+          Un enfoque integral que va desde la estrategia organizativa hasta la arquitectura profunda de código y el uso de Inteligencia Artificial.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Pilar 1 -->
+        <div class="p-6 rounded-2xl bg-dark-800/60 border border-slate-700/60 hover:border-brand-500/50 transition-all hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Desarrollo Agéntico &amp; IA</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Integración de Claude Code, asistentes LLM y protocolo MCP para generar casos de prueba BDD, modelar datasets sintéticos y auto-sanar selectores rotos.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-1.5 font-mono text-[11px] text-purple-300">
+            <span class="px-2 py-0.5 rounded bg-purple-950/60 border border-purple-800/40">MCP Protocol</span>
+            <span class="px-2 py-0.5 rounded bg-purple-950/60 border border-purple-800/40">Claude Code</span>
+            <span class="px-2 py-0.5 rounded bg-purple-950/60 border border-purple-800/40">Prompt Eng</span>
+          </div>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="p-6 rounded-2xl bg-dark-800/60 border border-slate-700/60 hover:border-brand-500/50 transition-all hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Automatización E2E &amp; APIs</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Arquitecturas modulares bajo Page Object Model (POM) con Playwright, Java, Selenium WebDriver y Rest Assured para microservicios y contratos JSON.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-1.5 font-mono text-[11px] text-brand-300">
+            <span class="px-2 py-0.5 rounded bg-brand-950/60 border border-brand-800/40">Playwright</span>
+            <span class="px-2 py-0.5 rounded bg-brand-950/60 border border-brand-800/40">Java / Selenium</span>
+            <span class="px-2 py-0.5 rounded bg-brand-950/60 border border-brand-800/40">Rest Assured</span>
+          </div>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="p-6 rounded-2xl bg-dark-800/60 border border-slate-700/60 hover:border-brand-500/50 transition-all hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Rendimiento con JMeter</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Diseño de pruebas de carga, estrés y capacidad. Análisis de latencias percentiles (p90/p95/p99) y ejecución desatendida en modo Non-GUI sobre Linux.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-1.5 font-mono text-[11px] text-amber-300">
+            <span class="px-2 py-0.5 rounded bg-amber-950/60 border border-amber-800/40">Apache JMeter</span>
+            <span class="px-2 py-0.5 rounded bg-amber-950/60 border border-amber-800/40">SLA Gating</span>
+            <span class="px-2 py-0.5 rounded bg-amber-950/60 border border-amber-800/40">Linux CLI</span>
+          </div>
+        </div>
+
+        <!-- Pilar 4 -->
+        <div class="p-6 rounded-2xl bg-dark-800/60 border border-slate-700/60 hover:border-brand-500/50 transition-all hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Liderazgo &amp; Quality Gates</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Estrategia de Shift-Left, definición de DoR/DoD, integración de compuertas en Jenkins/GitLab CI y trazabilidad de requisitos a defectos con Jira Xray.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-1.5 font-mono text-[11px] text-emerald-300">
+            <span class="px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40">CI/CD Gates</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40">Jira Xray</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40">ISTQB CTFL</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== PROYECTOS INSIGNIA ==================== -->
+  <section id="proyectos" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <h2 class="text-xs font-mono uppercase tracking-widest text-brand-400">Trabajos &amp; Arquitecturas</h2>
+        <p class="mt-2 text-3xl font-bold text-white tracking-tight">Proyectos Insignia</p>
+      </div>
+      <p class="mt-2 md:mt-0 text-slate-400 text-sm max-w-md">
+        Casos prácticos con código limpio, pipelines automatizados y documentación orientada a resolver cuellos de botella reales en producción.
+      </p>
+    </div>
+
+    <!-- Grid de Proyectos -->
+    <div class="space-y-10">
+
+      <!-- PROYECTO 1: AGENTIC AI (SHOWSTOPPER) -->
+      <div class="rounded-3xl bg-dark-850 border border-slate-800 overflow-hidden hover:border-brand-500/40 transition-all shadow-xl">
+        <div class="p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                PROYECTO ESTRELLA · IA NATIVA
+              </span>
+              <span class="text-xs text-slate-400 font-mono">v1.2.0 · Open Source</span>
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+              Agentic QA &amp; Synthetic Data Generator
+            </h3>
+
+            <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+              Framework de ingeniería agéntica que conecta especificaciones funcionales (Jira / Gherkin) y contratos OpenAPI con agentes de código (Claude Code / MCP). Transforma automáticamente requerimientos en suites completas de Playwright con asertos semánticos y genera datasets sintéticos relacionales para pruebas de backend.
+            </p>
+
+            <!-- Features Highlights -->
+            <ul class="mt-5 space-y-2 text-xs sm:text-sm text-slate-400">
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-brand-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Generación Automática:</strong> Pasa de Historia de Usuario a tests ejecutables en Playwright en segundos.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-brand-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Self-Healing Selector Logic:</strong> Sugerencia de selectores alternativos ante cambios de DOM sin romper la suite.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-brand-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Protocolo MCP Integrado:</strong> Servidor MCP local para que el agente inspeccione trazas de red y esquemas de base de datos.</span>
+              </li>
+            </ul>
+
+            <!-- Tech Tags -->
+            <div class="mt-6 flex flex-wrap gap-2 font-mono text-xs text-slate-300">
+              <span class="px-2.5 py-1 rounded bg-dark-700">TypeScript</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">Playwright</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">Zod Contracts</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">Model Context Protocol (MCP)</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">Action Caching</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">Faker.js</span>
+            </div>
+
+            <!-- Action Link Button -->
+            <div class="mt-5">
+              <a href="https://github.com/manu-code-maker/agentic-qa-mcp-suite" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold bg-purple-500/10 text-purple-300 border border-purple-500/30 hover:bg-purple-500 hover:text-white transition-all shadow-sm">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <span>Ver Repositorio Público en GitHub</span>
+                <span class="text-[10px] text-purple-400">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Code/Terminal Preview -->
+          <div class="lg:col-span-5 bg-dark-900 rounded-2xl border border-slate-800 p-4 font-mono text-xs text-slate-300 overflow-hidden shadow-inner">
+            <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-800 text-slate-500">
+              <div class="flex items-center gap-1.5">
+                <div class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></div>
+              </div>
+              <span class="text-[11px] text-slate-400">agentic-runner.ts</span>
+            </div>
+
+            <pre class="leading-relaxed overflow-x-auto text-[11px]"><span class="text-purple-400">import</span> { AgenticTestGenerator } <span class="text-purple-400">from</span> <span class="text-emerald-300">'@qa/agent-mcp'</span>;
+
+<span class="text-slate-500">// 1. Ingresar especificación de Story</span>
+<span class="text-blue-400">const</span> spec = <span class="text-purple-400">await</span> loadUserStory(<span class="text-emerald-300">'US-4021-checkout.md'</span>);
+
+<span class="text-slate-500">// 2. Agente genera matrices BDD + Synthetic Data</span>
+<span class="text-blue-400">const</span> suite = <span class="text-purple-400">await</span> AgenticTestGenerator.compile({
+  userStory: spec,
+  targetFramework: <span class="text-emerald-300">'playwright-ts'</span>,
+  generateEdgeCases: <span class="text-amber-400">true</span>,
+  fakerLocale: <span class="text-emerald-300">'es_ES'</span>
+});
+
+<span class="text-slate-500">// 3. Salida validada contra contratos OpenAPI</span>
+console.log(<span class="text-emerald-300">`✅ Generated ${suite.tests.length} tests without flakiness`</span>);</pre>
+
+            <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-[11px] text-emerald-400 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> 100% Determinista
+              </span>
+              <button onclick="simulateAgentRun()" class="px-2.5 py-1 rounded bg-brand-500/20 text-brand-300 border border-brand-500/40 hover:bg-brand-500 hover:text-white transition-all text-[11px]">
+                ▶ Simular Ejecución
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROYECTO 2: ENTERPRISE PLAYWRIGHT FRAMEWORK -->
+      <div class="rounded-3xl bg-dark-850 border border-slate-800 overflow-hidden hover:border-brand-500/40 transition-all shadow-xl">
+        <div class="p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-bold bg-brand-500/20 text-brand-300 border border-brand-500/30">
+                E2E &amp; WEB ARCHITECTURE
+              </span>
+              <span class="text-xs text-slate-400 font-mono">CI/CD Ready</span>
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+              Enterprise Playwright &amp; API Hybrid Framework
+            </h3>
+
+            <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+              Estructura de automatización industrial concebida para soportar decenas de desarrolladores y testers. Implementa el patrón Page Object Model avanzado, gestión de estados autenticados reutilizables (storageState), intercepción y mockeo de respuestas HTTP para desacoplar tests de UI de caídas de backend, y generación automática de trazas forenses con Playwright Trace Viewer.
+            </p>
+
+            <ul class="mt-5 space-y-2 text-xs sm:text-sm text-slate-400">
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-brand-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Ejecución Paralela Sharded:</strong> Reducción de tiempo de suite de 45 min a 6 min mediante sharding en GitHub Actions.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-brand-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Trace Viewer &amp; Video Recording:</strong> Captura automática de pantalla, red y árbol DOM únicamente en pruebas fallidas.</span>
+              </li>
+            </ul>
+
+            <div class="mt-6 flex flex-wrap gap-2 font-mono text-xs text-slate-300">
+              <span class="px-2.5 py-1 rounded bg-dark-700">Playwright Test</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">TypeScript</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">GitHub Actions</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">Docker</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">Allure Report</span>
+            </div>
+          </div>
+
+          <!-- Architecture Visual Card -->
+          <div class="lg:col-span-5 bg-dark-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-center">
+            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-4 text-center">Pipeline Architecture Flow</div>
+            
+            <div class="space-y-3 font-mono text-xs">
+              <div class="p-3 rounded-lg bg-dark-800 border border-slate-700 flex items-center justify-between">
+                <span class="text-slate-300">1. Git PR Push</span>
+                <span class="text-brand-400 font-bold">Lint &amp; Unit Gate</span>
+              </div>
+              <div class="flex justify-center text-slate-600">↓</div>
+              <div class="p-3 rounded-lg bg-dark-800 border border-slate-700 flex items-center justify-between">
+                <span class="text-slate-300">2. Parallel Shards (x4)</span>
+                <span class="text-amber-400 font-bold">Headless Playwright</span>
+              </div>
+              <div class="flex justify-center text-slate-600">↓</div>
+              <div class="p-3 rounded-lg bg-dark-800 border border-emerald-800/60 bg-emerald-950/20 flex items-center justify-between">
+                <span class="text-emerald-300">3. HTML Trace Report</span>
+                <span class="text-emerald-400 font-bold">GitHub Pages Deploy</span>
+              </div>
+            </div>
+
+            <div class="mt-5 text-center">
+              <span class="inline-block text-[11px] text-slate-400">Tasa de flaky tests mantenida por debajo del <strong>0.8%</strong></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROYECTO 3: JMETER & RENDIMIENTO -->
+      <div class="rounded-3xl bg-dark-850 border border-slate-800 overflow-hidden hover:border-brand-500/40 transition-all shadow-xl">
+        <div class="p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                PERFORMANCE &amp; RELIABILITY
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Alta Concurrencia</span>
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+              Automated JMeter Performance &amp; SLA Quality Gate
+            </h3>
+
+            <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+              Arnés de pruebas de carga y estrés con Apache JMeter ejecutado 100% por línea de comandos (Non-GUI) sobre contenedores Linux. Diseñado para validar contratos de microservicios y sistemas transaccionales con inyección de cientos de hilos concurrentes, control de latencia percentil (p95 y p99) y bloqueo automático del despliegue si se vulneran los SLAs acordados.
+            </p>
+
+            <ul class="mt-5 space-y-2 text-xs sm:text-sm text-slate-400">
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-brand-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>SLA Gate Automático:</strong> El pipeline detiene el despliegue si p95 &gt; 400ms o la tasa de errores &gt; 0%.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-brand-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Dashboards HTML Dinámicos:</strong> Generación y archivado de informes de rendimiento tras cada ejecución.</span>
+              </li>
+            </ul>
+
+            <div class="mt-6 flex flex-wrap gap-2 font-mono text-xs text-slate-300">
+              <span class="px-2.5 py-1 rounded bg-dark-700">Apache JMeter 5.6</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">Linux / Bash CLI</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">Docker</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">JSON Extractor</span>
+              <span class="px-2.5 py-1 rounded bg-dark-700">SLA Enforcement</span>
+            </div>
+          </div>
+
+          <!-- Benchmark Metrics Box -->
+          <div class="lg:col-span-5 bg-dark-900 rounded-2xl border border-slate-800 p-5 font-mono text-xs">
+            <div class="text-slate-400 text-[11px] pb-2 border-b border-slate-800 flex justify-between">
+              <span>Métricas de Validación en Carga</span>
+              <span class="text-emerald-400">PASSED</span>
+            </div>
+            
+            <div class="mt-4 space-y-2.5">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Concurrencia Pico:</span>
+                <span class="text-white font-bold">500 Threads (VUsers)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Throughput Medio:</span>
+                <span class="text-white font-bold">1.250 req/sec</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Percentil 95 (p95):</span>
+                <span class="text-emerald-400 font-bold">218 ms (SLA &lt; 400ms)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Percentil 99 (p99):</span>
+                <span class="text-emerald-400 font-bold">342 ms (SLA &lt; 600ms)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Tasa de Error HTTP:</span>
+                <span class="text-emerald-400 font-bold">0.00%</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-500 text-center">
+              Comando CLI: <code>jmeter -n -t plan.jmx -l res.jtl -e -o ./report/</code>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SIMULADOR DE PIPELINE & DEMO ==================== -->
+  <section id="live-demo" class="py-20 bg-dark-850 border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-brand-400">Interactive Quality Gate Console</h2>
+        <p class="mt-2 text-2xl sm:text-3xl font-bold text-white tracking-tight">Simulador de Pipeline CI/CD en Tiempo Real</p>
+        <p class="mt-2 text-slate-400 text-xs sm:text-sm">
+          Observa cómo se ejecuta un pase de Quality Gate automatizado integrando Playwright, validación de APIs con IA y control de rendimiento.
+        </p>
+      </div>
+
+      <!-- Terminal Window -->
+      <div class="rounded-2xl bg-dark-900 border border-slate-800 shadow-2xl overflow-hidden font-mono text-xs">
+        
+        <!-- Terminal Header -->
+        <div class="px-4 py-3 bg-dark-800/80 border-b border-slate-800 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+            <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+            <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+            <span class="ml-2 text-slate-400 text-[11px]">pipeline-quality-gate.sh · bash</span>
+          </div>
+
+          <button id="run-pipeline-btn" onclick="runPipelineSimulation()" class="px-3 py-1 rounded bg-brand-500 hover:bg-brand-600 text-white font-semibold transition-all text-[11px] flex items-center gap-1.5 shadow-sm">
+            <span>▶ Ejecutar Pipeline Completo</span>
+          </button>
+        </div>
+
+        <!-- Terminal Output -->
+        <div id="terminal-screen" class="p-5 h-72 overflow-y-auto space-y-1.5 text-slate-300 leading-relaxed text-[11px] sm:text-xs">
+          <div class="text-slate-500"># Sistema listo. Pulsa "Ejecutar Pipeline Completo" para lanzar los Quality Gates...</div>
+          <div class="text-slate-500">$ agentic-qa --target=staging --quality-gate=strict</div>
+        </div>
+
+        <!-- Terminal Footer Status Bar -->
+        <div class="px-4 py-2 bg-dark-800/40 border-t border-slate-800 text-[11px] text-slate-400 flex items-center justify-between">
+          <span id="pipeline-status">Estado: En espera</span>
+          <span class="text-slate-500">Framework: Playwright + Rest Assured + JMeter</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== TRAYECTORIA PROFESIONAL ==================== -->
+  <section id="experiencia" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-brand-400">Trayectoria Comprobada</h2>
+      <p class="mt-2 text-3xl font-bold text-white tracking-tight">Experiencia &amp; Rigor Científico</p>
+    </div>
+
+    <div class="relative border-l border-slate-800 ml-4 md:ml-32 space-y-12">
+      
+      <!-- Carrefour -->
+      <div class="relative pl-8 group">
+        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-dark-900 border-2 border-brand-500 group-hover:scale-125 transition-transform"></div>
+        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between">
+          <h3 class="text-lg font-bold text-white">QA Lead &amp; QA Automation Tester</h3>
+          <span class="text-xs font-mono text-brand-400 font-semibold">Feb 2024 – Presente</span>
+        </div>
+        <div class="text-sm font-semibold text-slate-400 mt-0.5">Carrefour España · Madrid (Híbrido)</div>
+        <p class="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
+          Liderazgo técnico de la estrategia de aseguramiento de calidad en plataformas de alto volumen transaccional. Implementación de suites automatizadas con Playwright y Rest Assured en Java, integración de Quality Gates en pipelines de Jenkins y pionero en la adopción de asistentes de IA (Claude Code) para optimizar la redacción de escenarios BDD y datasets de prueba.
+        </p>
+      </div>
+
+      <!-- OSF Digital -->
+      <div class="relative pl-8 group">
+        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-dark-900 border-2 border-slate-600 group-hover:scale-125 transition-transform"></div>
+        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between">
+          <h3 class="text-lg font-bold text-white">QA Lead / Ingeniero de Pruebas de Software QA</h3>
+          <span class="text-xs font-mono text-slate-400 font-semibold">Jun 2021 – Feb 2024</span>
+        </div>
+        <div class="text-sm font-semibold text-slate-400 mt-0.5">OSF Digital · 100% Remoto / Madrid</div>
+        <p class="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
+          Coordinación técnica de equipos distribuidos de QA en proyectos e-commerce internacionales a gran escala (Salesforce Commerce Cloud). Automatización de regresión con frameworks en Python y Robot Framework, acelerando los tiempos de ciclo y reduciendo regresiones en un 40%. Gestión diaria en inglés con clientes en EE. UU. y Europa.
+        </p>
+      </div>
+
+      <!-- Accelya -->
+      <div class="relative pl-8 group">
+        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-dark-900 border-2 border-slate-600 group-hover:scale-125 transition-transform"></div>
+        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between">
+          <h3 class="text-lg font-bold text-white">Ingeniero de Pruebas de Software QA</h3>
+          <span class="text-xs font-mono text-slate-400 font-semibold">Abr 2019 – Jun 2021</span>
+        </div>
+        <div class="text-sm font-semibold text-slate-400 mt-0.5">Accelya Group · Madrid</div>
+        <p class="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
+          Validación exhaustiva de sistemas backend y transaccionales para la industria de la aviación comercial y liquidaciones financieras bajo Scrum. Automatización con Java/Selenium y validación de bases de datos complejas mediante consultas SQL avanzadas.
+        </p>
+      </div>
+
+      <!-- UAM Education -->
+      <div class="relative pl-8 group">
+        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-dark-900 border-2 border-indigo-500 group-hover:scale-125 transition-transform"></div>
+        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between">
+          <h3 class="text-lg font-bold text-white">Máster en Química Agrícola &amp; Grado en Ciencias Ambientales</h3>
+          <span class="text-xs font-mono text-indigo-400 font-semibold">Universidad Autónoma de Madrid (UAM)</span>
+        </div>
+        <p class="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
+          Formación científica universitaria que fundamenta un enfoque metódico para la calidad de software: método científico, aislamiento riguroso de variables, modelización de sistemas complejos y análisis estadístico cuantitativo.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CONTACTO & FOOTER ==================== -->
+  <section id="contacto" class="py-20 bg-dark-850 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-400 border border-brand-500/20 mb-6">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+      </div>
+
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">¿Conversamos sobre Calidad e Innovación?</h2>
+      
+      <p class="mt-4 text-slate-400 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+        Disponible para posiciones de <strong>QA Lead, Staff QA Engineer y Arquitecto de Automatización / IA</strong> en Madrid o en modalidad 100% Remota.
+      </p>
+
+      <!-- Action Card Buttons -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        
+        <a href="mailto:manumorales16@gmail.com" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-brand-500 hover:bg-brand-600 text-white shadow-lg shadow-brand-500/25 transition-all flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          <span>manumorales16@gmail.com</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/qa-manuelm" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-dark-800 hover:bg-dark-700 text-slate-200 border border-slate-700 transition-all flex items-center gap-2">
+          <svg class="w-4 h-4 text-[#0077b5]" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <span>Perfil de LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/manu-code-maker" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-dark-800 hover:bg-dark-700 text-slate-200 border border-slate-700 transition-all flex items-center gap-2">
+          <svg class="w-4 h-4 text-slate-300" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <span>GitHub</span>
+        </a>
+
+        <button onclick="copyEmailToClipboard()" id="copy-btn" class="px-5 py-3.5 rounded-xl font-semibold text-sm bg-dark-800 hover:bg-dark-700 text-slate-300 border border-slate-700 transition-all">
+          Copiar Email
+        </button>
+
+      </div>
+
+      <!-- Quick Contact Info Footer -->
+      <div class="mt-14 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+        <div>© 2026 Manuel Morales Calderón. Diseñado con rigor de ingeniería.</div>
+        <div class="mt-3 sm:mt-0 flex gap-4">
+          <span>ISTQB CTFL Certified</span>
+          <span>•</span>
+          <span>Cambridge English B2/C1</span>
+          <span>•</span>
+          <span>Madrid, España</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== JAVASCRIPT INTERACTIVIDAD ==================== -->
+  <script>
+    // Copy email helper
+    function copyEmailToClipboard() {
+      navigator.clipboard.writeText('manumorales16@gmail.com').then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.innerText = '¡Copiado con Éxito!';
+        btn.classList.add('text-brand-400', 'border-brand-500');
+        setTimeout(() => {
+          btn.innerText = 'Copiar Email';
+          btn.classList.remove('text-brand-400', 'border-brand-500');
+        }, 2500);
+      });
+    }
+
+    // Interactive Terminal Simulation
+    function runPipelineSimulation() {
+      const screen = document.getElementById('terminal-screen');
+      const status = document.getElementById('pipeline-status');
+      const btn = document.getElementById('run-pipeline-btn');
+
+      btn.disabled = true;
+      btn.classList.add('opacity-50', 'cursor-not-allowed');
+      screen.innerHTML = '';
+      status.innerText = 'Estado: Ejecutando Quality Gate...';
+      status.className = 'text-amber-400 font-bold';
+
+      const logs = [
+        { text: '[CI/CD] Inicializando pipeline de calidad en runner Linux x86_64...', delay: 200, color: 'text-slate-400' },
+        { text: '[AGENTIC-AI] Analizando User Stories y contratos OpenAPI con modelo local...', delay: 600, color: 'text-purple-400' },
+        { text: '[AGENTIC-AI] ✅ Generados 28 escenarios BDD y datasets sintéticos validados.', delay: 1100, color: 'text-purple-300' },
+        { text: '[PLAYWRIGHT] Lanzando 4 workers en paralelo (Chromium, Firefox, WebKit)...', delay: 1600, color: 'text-brand-400' },
+        { text: '  ✓ tests/e2e/checkout-flow.spec.ts (4.1s)', delay: 2100, color: 'text-emerald-400' },
+        { text: '  ✓ tests/api/rest-assured-contracts.spec.ts (1.8s)', delay: 2500, color: 'text-emerald-400' },
+        { text: '  ✓ tests/security/auth-token-refresh.spec.ts (2.3s)', delay: 2900, color: 'text-emerald-400' },
+        { text: '[JMETER] Ejecutando arnés de rendimiento Non-GUI (500 vUsers ramp-up)...', delay: 3500, color: 'text-amber-400' },
+        { text: '[JMETER] Latencia Percentil 95: 214 ms | Tasa de Error: 0.00% (SLA OK)', delay: 4200, color: 'text-amber-300' },
+        { text: '[QUALITY-GATE] Verificando SonarQube & Cobertura mínima (Threshold: >85%)...', delay: 4800, color: 'text-blue-400' },
+        { text: '[QUALITY-GATE] ✨ TODOS LOS QUALITY GATES SUPERADOS CON ÉXITO (Pase a Producción APROBADO)', delay: 5400, color: 'text-emerald-400 font-bold' }
+      ];
+
+      logs.forEach(log => {
+        setTimeout(() => {
+          const div = document.createElement('div');
+          div.className = log.color;
+          div.innerText = log.text;
+          screen.appendChild(div);
+          screen.scrollTop = screen.scrollHeight;
+        }, log.delay);
+      });
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.classList.remove('opacity-50', 'cursor-not-allowed');
+        status.innerText = 'Estado: Pase a Producción Aprobado (100% Pasado)';
+        status.className = 'text-emerald-400 font-bold';
+      }, 5700);
+    }
+
+    function simulateAgentRun() {
+      const btn = document.getElementById('run-pipeline-btn');
+      btn.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(runPipelineSimulation, 400);
+    }
+  </script>
+
+</body>
+</html>
+
