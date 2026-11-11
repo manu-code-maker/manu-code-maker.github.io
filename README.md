@@ -29,6 +29,13 @@ The interactive web portfolio is live and deployed at:
 - **Stagehand-Style Action Caching:** Cached resolved locators with 100% confidence for $0 LLM cost and 0ms latency on regressions.
 - **Heuristic Self-Healing:** Autonomous fallback via accessibility tree snapshot when selectors break.
 
+### 2. [enterprise-playwright-framework](https://github.com/manu-code-maker/enterprise-playwright-framework)
+*Production-grade Playwright & API Hybrid Test Automation Framework.*
+- **Advanced POM + COM Architecture:** Reusable components, base page abstractions, and fixture dependency injection (`base.fixture.ts`).
+- **Session Reusability (`storageState`):** Pre-authenticated sessions stored in `.auth/user.json` reducing regression runtimes by over 60%.
+- **Contract Schema Validation:** Strict Zod contracts catching payload drift and backend breaking changes.
+- **CI Sharding Matrix:** 4-shard parallel execution on GitHub Actions with automatic blob report consolidation.
+
 ---
 
 ## 📬 Contact & Availability
