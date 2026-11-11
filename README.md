@@ -36,6 +36,13 @@ The interactive web portfolio is live and deployed at:
 - **Contract Schema Validation:** Strict Zod contracts catching payload drift and backend breaking changes.
 - **CI Sharding Matrix:** 4-shard parallel execution on GitHub Actions with automatic blob report consolidation.
 
+### 3. [jmeter-performance-sla-gate](https://github.com/manu-code-maker/jmeter-performance-sla-gate)
+*Automated Non-GUI Apache JMeter Performance Framework with CI/CD SLA Quality Gating.*
+- **100% Non-GUI Execution:** Containerized headless runner designed for Linux CI pipelines.
+- **Percentile-Driven SLA Gate:** Standalone Python engine enforcing strict p90, p95, p99, and error rate quality gates.
+- **Automated Deployment Blocking:** Halts CD release pipelines if latency or error thresholds are violated.
+- **JMeter HTML Dashboard Generation:** Automatic archiving of response time distribution and throughput charts.
+
 ---
 
 ## 📬 Contact & Availability
